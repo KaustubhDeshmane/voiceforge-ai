@@ -2,9 +2,9 @@
 
 # 🎙️ VoiceForge AI
 
-### Modern • Intelligent • Browser-Based Text-to-Speech Experience
+### Modern • Intelligent • Browser-Native Text-to-Speech Experience
 
-VoiceForge AI is a modern **Text-to-Speech (TTS)** web application built entirely with **Vanilla JavaScript** and the **Web Speech API**. It provides a clean, responsive interface with intelligent voice management, offline text summarization, real-time speech visualization, theme customization, persistent storage, and productivity-focused features—all without requiring external frameworks.
+VoiceForge AI is a browser-native Text-to-Speech (TTS) application built with Vanilla JavaScript and the Web Speech API. It delivers natural speech synthesis through a modern interface with customizable voices, intelligent text processing, real-time visualization, persistent storage, and a responsive user experience—without relying on external frameworks.
 
 ---
 
@@ -55,10 +55,10 @@ VoiceForge AI is a modern **Text-to-Speech (TTS)** web application built entirel
 
 | Technology | Purpose |
 |------------|---------|
-| HTML5 | Structure |
-| CSS3 | Styling & Responsive Design |
+| HTML5 | Semantic Markup |
+| CSS3 | Responsive UI & Animations |
 | JavaScript (ES6+) | Application Logic |
-| Web Speech API | Text-to-Speech Engine |
+| Web Speech API | Speech Synthesis |
 | Local Storage | Persistent Data |
 | Canvas API | Speech Visualization |
 
@@ -94,7 +94,7 @@ VoiceForge-AI
 
 ---
 
-## ⚙️ Getting Started
+## 🚀 Getting Started
 
 ### Clone the Repository
 
@@ -116,15 +116,15 @@ No installation or build process is required.
 
 ---
 
-## 📈 Roadmap
+## 🗺️ Roadmap
 
-- Voice Favorites
-- Export Audio
-- OCR Support
-- AI-Powered Summaries
-- Translation Support
-- Progressive Web App (PWA)
-- Cloud Sync
+- [ ] Voice Favorites
+- [ ] Audio Export
+- [ ] OCR Integration
+- [ ] AI-powered Summarization
+- [ ] Translation Support
+- [ ] Progressive Web App (PWA)
+- [ ] Cloud Synchronization
 
 ---
 
@@ -136,12 +136,12 @@ GitHub: https://github.com/KaustubhDeshmane
 
 ---
 
-## 📬 Contact
+## 💬 Feedback & Support
 
-For questions, suggestions, or collaboration:
+Questions, feature requests, and bug reports are welcome.
 
-- GitHub Issues
-- GitHub Discussions
+- Open an Issue
+- Start a Discussion
 
 ---
 
@@ -188,6 +188,6 @@ This project is licensed under the **MIT License**.
 
 <div align="center">
 
-Made with ❤️ by <strong>Kaustubh Deshmane</strong>
+❤️Built with HTML, CSS, JavaScript, and the Web Speech API.
 
 </div>
