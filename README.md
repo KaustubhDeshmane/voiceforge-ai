@@ -25,9 +25,7 @@ VoiceForge AI is a modern **Text-to-Speech (TTS)** web application built entirel
 
 ## 🚀 Live Demo
 
-🔗 **Coming Soon**
-
-> Replace with your deployment link after hosting on GitHub Pages or Vercel.
+🔗 **https://kaustubhdeshmane.github.io/voiceforge-ai/**
 
 ---
 
