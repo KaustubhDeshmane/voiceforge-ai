@@ -118,12 +118,6 @@ No installation or build process is required.
 
 ---
 
-## 📸 Preview
-
-> Add screenshots or GIFs here after deployment.
-
----
-
 ## 📈 Roadmap
 
 - Voice Favorites
