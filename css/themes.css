@@ -1,0 +1,483 @@
+/* ===========================================================
+   VoiceForge AI
+   themes.css
+   Dark • Light • Accent Themes
+=========================================================== */
+
+/* ===========================================================
+   GLOBAL THEME TRANSITION
+=========================================================== */
+
+html,
+body,
+nav,
+main,
+section,
+div,
+button,
+input,
+textarea,
+select,
+canvas,
+.glass,
+.stats span,
+.history-item{
+
+    transition:
+        background-color .35s ease,
+        color .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease,
+        transform .35s ease;
+
+}
+
+/* ===========================================================
+   DEFAULT DARK THEME
+=========================================================== */
+
+body{
+
+    background:#0B1120;
+    color:#ffffff;
+
+}
+
+body.dark{
+
+    background:#0B1120;
+    color:#ffffff;
+
+}
+
+body.dark textarea{
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+}
+
+body.dark textarea::placeholder{
+
+    color:#BDBDBD;
+
+}
+
+body.dark select{
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+}
+
+body.dark .stats span{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+body.dark .history-item{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+/* ===========================================================
+   LIGHT THEME
+=========================================================== */
+
+body.light{
+
+    background:#EEF2FF;
+
+    color:#111827;
+
+}
+
+body.light nav{
+
+    color:#111827;
+
+}
+
+body.light .logo{
+
+    color:#111827;
+
+}
+
+body.light .glass{
+
+    background:rgba(255,255,255,.72);
+
+    border:1px solid rgba(255,255,255,.6);
+
+    backdrop-filter:blur(24px);
+
+}
+
+body.light textarea{
+
+    background:#F8FAFC;
+
+    color:#111827;
+
+}
+
+body.light textarea::placeholder{
+
+    color:#6B7280;
+
+}
+
+body.light select{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+body.light select option{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+body.light label{
+
+    color:#111827;
+
+}
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light h4{
+
+    color:#111827;
+
+}
+
+body.light .stats span{
+
+    background:white;
+
+    color:#111827;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+
+}
+
+body.light .history-item{
+
+    background:white;
+
+    color:#111827;
+
+}
+
+body.light .history-item p{
+
+    color:#4B5563;
+
+}
+
+body.light #visualizer{
+
+    background:#F8FAFC;
+
+}
+
+body.light ::-webkit-scrollbar-track{
+
+    background:#E5E7EB;
+
+}
+
+body.light #toast{
+
+    color:white;
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+body.light .toolbar button,
+body.light .buttons button{
+
+    color:white;
+
+}
+
+/* ===========================================================
+   INPUTS
+=========================================================== */
+
+body.light input[type="range"]{
+
+    background:#D1D5DB;
+
+}
+
+/* ===========================================================
+   ACCENT COLORS
+=========================================================== */
+
+/* Purple */
+
+body.theme-purple{
+
+    --primary:#7C3AED;
+    --secondary:#4F46E5;
+    --accent:#A855F7;
+
+}
+
+/* Blue */
+
+body.theme-blue{
+
+    --primary:#2563EB;
+    --secondary:#1D4ED8;
+    --accent:#38BDF8;
+
+}
+
+/* Emerald */
+
+body.theme-green{
+
+    --primary:#10B981;
+    --secondary:#059669;
+    --accent:#34D399;
+
+}
+
+/* Rose */
+
+body.theme-rose{
+
+    --primary:#E11D48;
+    --secondary:#BE123C;
+    --accent:#FB7185;
+
+}
+
+/* Orange */
+
+body.theme-orange{
+
+    --primary:#EA580C;
+    --secondary:#C2410C;
+    --accent:#FB923C;
+
+}
+
+/* Cyan */
+
+body.theme-cyan{
+
+    --primary:#0891B2;
+    --secondary:#0E7490;
+    --accent:#22D3EE;
+
+}
+
+/* ===========================================================
+   AURORA COLORS
+=========================================================== */
+
+body.theme-purple .blob1{
+
+    background:#7C3AED;
+
+}
+
+body.theme-purple .blob2{
+
+    background:#4F46E5;
+
+}
+
+body.theme-purple .blob3{
+
+    background:#A855F7;
+
+}
+
+body.theme-blue .blob1{
+
+    background:#2563EB;
+
+}
+
+body.theme-blue .blob2{
+
+    background:#1D4ED8;
+
+}
+
+body.theme-blue .blob3{
+
+    background:#38BDF8;
+
+}
+
+body.theme-green .blob1{
+
+    background:#10B981;
+
+}
+
+body.theme-green .blob2{
+
+    background:#059669;
+
+}
+
+body.theme-green .blob3{
+
+    background:#34D399;
+
+}
+
+body.theme-rose .blob1{
+
+    background:#E11D48;
+
+}
+
+body.theme-rose .blob2{
+
+    background:#BE123C;
+
+}
+
+body.theme-rose .blob3{
+
+    background:#FB7185;
+
+}
+
+body.theme-orange .blob1{
+
+    background:#EA580C;
+
+}
+
+body.theme-orange .blob2{
+
+    background:#C2410C;
+
+}
+
+body.theme-orange .blob3{
+
+    background:#FB923C;
+
+}
+
+body.theme-cyan .blob1{
+
+    background:#0891B2;
+
+}
+
+body.theme-cyan .blob2{
+
+    background:#0E7490;
+
+}
+
+body.theme-cyan .blob3{
+
+    background:#22D3EE;
+
+}
+
+/* ===========================================================
+   GLASS EFFECTS
+=========================================================== */
+
+body.light .glass:hover{
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.08);
+
+}
+
+body.dark .glass:hover{
+
+    box-shadow:
+
+        0 20px 45px rgba(124,58,237,.20);
+
+}
+
+/* ===========================================================
+   THEME TOGGLE
+=========================================================== */
+
+#themeToggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+body.light ::selection{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+body.dark ::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===========================================================
+   FOCUS
+=========================================================== */
+
+body.light textarea:focus,
+body.light select:focus{
+
+    box-shadow:
+
+        0 0 0 3px rgba(37,99,235,.18);
+
+}
+
+body.dark textarea:focus,
+body.dark select:focus{
+
+    box-shadow:
+
+        0 0 0 3px rgba(124,58,237,.18);
+
+}
+
+/* ===========================================================
+   END
+=========================================================== */

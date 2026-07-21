@@ -1,0 +1,486 @@
+/* ===========================================================
+   VoiceForge AI
+   responsive.css
+   Mobile • Tablet • Laptop • 4K
+=========================================================== */
+
+
+/* ===========================================================
+   LARGE DESKTOP (1600px+)
+=========================================================== */
+
+@media (min-width:1600px){
+
+    main{
+
+        max-width:1550px;
+
+    }
+
+    textarea{
+
+        height:460px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   DESKTOP
+=========================================================== */
+
+@media (max-width:1400px){
+
+    main{
+
+        width:95%;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LAPTOP
+=========================================================== */
+
+@media (max-width:1200px){
+
+    main{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .left-panel,
+    .right-panel{
+
+        width:100%;
+
+    }
+
+    textarea{
+
+        height:350px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width:992px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .logo{
+
+        font-size:1.8rem;
+
+    }
+
+    textarea{
+
+        height:320px;
+
+    }
+
+    .stats{
+
+        justify-content:center;
+
+    }
+
+    .toolbar{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+/* ===========================================================
+   SMALL TABLET
+=========================================================== */
+
+@media (max-width:768px){
+
+    body{
+
+        padding:18px;
+
+    }
+
+    nav{
+
+        width:100%;
+
+    }
+
+    main{
+
+        width:100%;
+
+        margin-top:20px;
+
+    }
+
+    .glass{
+
+        border-radius:18px;
+
+    }
+
+    .left-panel,
+    .right-panel{
+
+        padding:22px;
+
+    }
+
+    textarea{
+
+        height:280px;
+
+        font-size:.95rem;
+
+    }
+
+    .buttons{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .toolbar{
+
+        flex-direction:column;
+
+    }
+
+    .toolbar button{
+
+        width:100%;
+
+    }
+
+    .stats{
+
+        flex-direction:column;
+
+    }
+
+    .stats span{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .history-header{
+
+        flex-direction:column;
+
+        gap:16px;
+
+    }
+
+    #toast{
+
+        right:20px;
+
+        left:20px;
+
+        bottom:20px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width:576px){
+
+    body{
+
+        padding:14px;
+
+    }
+
+    .logo{
+
+        font-size:1.45rem;
+
+        text-align:center;
+
+    }
+
+    nav{
+
+        gap:15px;
+
+    }
+
+    .left-panel h2,
+    .right-panel h2{
+
+        font-size:1.3rem;
+
+    }
+
+    textarea{
+
+        height:240px;
+
+        padding:16px;
+
+    }
+
+    .toolbar button,
+    .buttons button{
+
+        padding:14px;
+
+        font-size:.95rem;
+
+    }
+
+    select{
+
+        font-size:.95rem;
+
+    }
+
+    .control label{
+
+        font-size:.9rem;
+
+    }
+
+    .visualizer-card{
+
+        padding:20px;
+
+    }
+
+    #visualizer{
+
+        height:180px;
+
+    }
+
+    .history{
+
+        padding:20px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   SMALL MOBILE
+=========================================================== */
+
+@media (max-width:420px){
+
+    .logo{
+
+        font-size:1.25rem;
+
+    }
+
+    textarea{
+
+        height:210px;
+
+    }
+
+    .toolbar button,
+    .buttons button{
+
+        font-size:.88rem;
+
+    }
+
+    .stats span{
+
+        font-size:.82rem;
+
+    }
+
+    #visualizer{
+
+        height:150px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   VERY SMALL DEVICES
+=========================================================== */
+
+@media (max-width:360px){
+
+    body{
+
+        padding:10px;
+
+    }
+
+    .left-panel,
+    .right-panel{
+
+        padding:16px;
+
+    }
+
+    textarea{
+
+        height:180px;
+
+    }
+
+}
+
+
+/* ===========================================================
+   LANDSCAPE PHONES
+=========================================================== */
+
+@media (max-height:550px) and (orientation:landscape){
+
+    textarea{
+
+        height:160px;
+
+    }
+
+    .blob{
+
+        opacity:.18;
+
+    }
+
+}
+
+
+/* ===========================================================
+   TOUCH DEVICES
+=========================================================== */
+
+@media (hover:none){
+
+    .toolbar button:hover,
+    .buttons button:hover,
+    .glass:hover{
+
+        transform:none;
+
+        box-shadow:none;
+
+    }
+
+}
+
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+
+/* ===========================================================
+   HIGH CONTRAST
+=========================================================== */
+
+@media (prefers-contrast:more){
+
+    .glass{
+
+        border:2px solid white;
+
+    }
+
+    textarea,
+    select{
+
+        border:2px solid white;
+
+    }
+
+}
+
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+    body{
+
+        background:white;
+
+        color:black;
+
+    }
+
+    .blob,
+    nav,
+    .toolbar,
+    .buttons,
+    #toast{
+
+        display:none;
+
+    }
+
+    .glass{
+
+        border:1px solid #000;
+
+        background:white;
+
+        box-shadow:none;
+
+    }
+
+}
+
+
+/* ===========================================================
+   END
+=========================================================== */

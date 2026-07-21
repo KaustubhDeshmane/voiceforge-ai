@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoiceForge AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <!-- Aurora Background -->
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            🔊 VoiceForge AI
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <button id="themeToggle">
+                🌙
+            </button>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <!-- Left Section -->
+
+        <section class="left-panel glass">
+
+            <h2>Enter Text</h2>
+
+            <textarea id="textInput"
+                placeholder="Type, paste, or upload your text here..."></textarea>
+
+            <div class="stats">
+
+                <span>Words : <b id="wordCount">0</b></span>
+
+                <span>Characters : <b id="charCount">0</b></span>
+
+                <span>Reading : <b id="readingTime">0 min</b></span>
+
+            </div>
+
+            <div class="toolbar">
+
+                <button id="uploadBtn">
+
+                    📂 Upload TXT
+
+                </button>
+
+                <input type="file"
+                    id="fileInput"
+                    accept=".txt"
+                    hidden>
+
+                <button id="summarizeBtn">
+
+                    ✨ Summarize
+
+                </button>
+
+                <button id="copyBtn">
+
+                    📋 Copy
+
+                </button>
+
+                <button id="clearBtn">
+
+                    🗑 Clear
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Right Section -->
+
+        <section class="right-panel glass">
+
+            <h2>Speech Controls</h2>
+
+            <div class="control">
+
+                <label>
+
+                    Voice
+
+                </label>
+
+                <select id="voiceSelect">
+
+                </select>
+
+            </div>
+
+            <div class="control">
+
+                <label>
+
+                    Language
+
+                </label>
+
+                <select id="languageSelect">
+
+                    <option>English</option>
+
+                    <option>Hindi</option>
+
+                    <option>French</option>
+
+                    <option>German</option>
+
+                    <option>Japanese</option>
+
+                </select>
+
+            </div>
+
+            <div class="control">
+
+                <label>
+
+                    Speech Rate
+
+                </label>
+
+                <input type="range"
+                    id="rate"
+                    min="0.5"
+                    max="2"
+                    value="1"
+                    step="0.1">
+
+            </div>
+
+            <div class="control">
+
+                <label>
+
+                    Pitch
+
+                </label>
+
+                <input type="range"
+                    id="pitch"
+                    min="0"
+                    max="2"
+                    value="1"
+                    step="0.1">
+
+            </div>
+
+            <div class="control">
+
+                <label>
+
+                    Volume
+
+                </label>
+
+                <input type="range"
+                    id="volume"
+                    min="0"
+                    max="1"
+                    value="1"
+                    step="0.1">
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="speakBtn">
+
+                    ▶ Speak
+
+                </button>
+
+                <button id="pauseBtn">
+
+                    ⏸ Pause
+
+                </button>
+
+                <button id="resumeBtn">
+
+                    ▶ Resume
+
+                </button>
+
+                <button id="stopBtn">
+
+                    ⏹ Stop
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Visualizer -->
+
+    <section class="glass visualizer-card">
+
+        <h2>Audio Visualizer</h2>
+
+        <canvas id="visualizer"></canvas>
+
+    </section>
+
+    <!-- History -->
+
+    <section class="glass history">
+
+        <div class="history-header">
+
+            <h2>
+
+                Recent History
+
+            </h2>
+
+            <button id="clearHistory">
+
+                Clear History
+
+            </button>
+
+        </div>
+
+        <div id="historyList">
+
+        </div>
+
+    </section>
+
+    <!-- Toast -->
+
+    <div id="toastContainer"></div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/fileHandler.js"></script>
+    <script src="js/summarizer.js"></script>
+    <script src="js/voices.js"></script>
+    <script src="js/visualizer.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
