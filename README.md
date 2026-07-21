@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🎙️ VoiceForge AI
 
 ### Modern • Intelligent • Browser-Based Text-to-Speech Experience
@@ -16,6 +18,8 @@ VoiceForge AI is a modern **Text-to-Speech (TTS)** web application built entirel
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 </p>
+
+</div>
 
 ---
 
@@ -86,6 +90,7 @@ VoiceForge-AI
 │   ├── theme.js
 │   └── storage.js
 │
+├── LICENSE
 └── README.md
 ```
 
@@ -96,13 +101,13 @@ VoiceForge-AI
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/KaustubhDeshmane/VoiceForge-AI.git
+git clone https://github.com/KaustubhDeshmane/voiceforge-ai.git
 ```
 
 ### Navigate to the Project
 
 ```bash
-cd VoiceForge-AI
+cd voiceforge-ai
 ```
 
 ### Run the Application
@@ -189,8 +194,8 @@ This project is licensed under the **MIT License**.
 
 ---
 
-<p align="center">
+<div align="center">
 
 Made with ❤️ by <strong>Kaustubh Deshmane</strong>
 
-</p>
+</div>
